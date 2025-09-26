@@ -4,25 +4,14 @@
 
 This is a Python program that fetches data from two Pokémon APIs, combines it, and shows the data in a table in the terminal. It handles loading messages, errors, empty results, and lets you retry if something goes wrong.
 
-## About
+This project was made with the use of Python and the requests library
 
-The project fetches Pokémon details and Pokémon species info from two different APIs. It joins this data, calculates extra info like HP-to-Weight ratio, and shows it in the terminal.
+## APIs Used
 
-It also deals with errors like no internet, empty results, or fetch failures by asking the user if they want to retry.
-
-## Tech Used
-
-- Python 3
-- requests library
-
-## Features
-
-- Fetches a list of Pokémon (you choose how many)
-- Fetches stats and species info separately and joins them
-- Calculates an HP-to-Weight ratio
-- Shows loading, error, and empty messages
-- Lets user retry on errors or empty data
-- Displays a formatted table in the terminal
+- List Pokémon: https://pokeapi.co/api/v2/pokemon?limit=10
+- Pokémon Details: https://pokeapi.co/api/v2/pokemon/{name} (e.g., https://pokeapi.co/api/v2/pokemon/pikachu)
+- Pokémon Species Details: https://pokeapi.co/api/v2/pokemon-species/{name} (e.g., https://pokeapi.co/api/v2/pokemon-species/pikachu)
+- API documentation: https://pokeapi.co/docs/v2
 
 ## How to Setup
 
@@ -42,7 +31,10 @@ Run the program, then it will fetch and show the data. If there is a problem or 
 
 ## How Data is Joined
 
-The program fetches data from two APIs for each Pokémon name. It matches and joins the data by the Pokémon’s name so all info shows together.
+For each Pokémon in the list, the program fetches details from two APIs using the Pokémon's name. It joins the data by matching the name, so all info shows together.
+
+Example:
+- For "pikachu", it fetches from /pokemon/pikachu and /pokemon-species/pikachu and combines the stats, type, color, legendary status, and computes HP-to-Weight ratio for the table.
 
 ## Limitations
 
