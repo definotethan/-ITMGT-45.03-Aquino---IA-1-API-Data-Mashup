@@ -50,3 +50,7 @@ The program fetches data from two APIs for each Pokémon name. It matches and jo
 - Only shows data in the terminal (no graphics)
 - Does not support fetching beyond initial limit
 - May miss some Pokémon data depending on the APIs
+
+## AI Assistance
+
+This project was developed with some assistance from AI, especially for debugging and cleaning messy code. A specific use case was that I used AI to give me methods that would allow me to test the different errors (API, Empty List and Network Errors). Code and logic were reviewed and adjusted manually.
