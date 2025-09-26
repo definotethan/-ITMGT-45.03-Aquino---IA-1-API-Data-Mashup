@@ -27,7 +27,7 @@ python main.py
 
 ## How to Use
 
-Run the program, then it will fetch and show the data. If there is a problem or no data, it will ask if you want to try again or exit through the erminal.
+Run the program, then it will fetch and show the data. If there is a problem or no data, it will ask if you want to try again or exit through the terminal.
 
 ## How Data is Joined
 
